@@ -10,12 +10,8 @@ let laterYears = myAge - 2;
 laterYears *= 4;
 
 // Uncomment if you want to check your work at this point
-console.log(
-  `A dog's early years before 2 years old is equal to ${earlyYears} dog years.`
-);
-console.log(
-  `A dog's later years after 2 years old is equal to ${laterYears} dog years.`
-);
+//console.log(`A dog's early years before 2 years old is equal to ${earlyYears} dog years.`);
+//console.log(`A dog's later years after 2 years old is equal to ${laterYears} dog years.`);
 
 // Add early years and later years to determine a dog's actual age:
 var myAgeInDogYears = earlyYears + laterYears;

@@ -13,7 +13,7 @@ laterYears *= 4;
 //console.log(`A dog's early years before 2 years old is equal to ${earlyYears} dog years.`);
 //console.log(`A dog's later years after 2 years old is equal to ${laterYears} dog years.`);
 
-// Add early years and later years to determine a dog's actual age:
+// Adds early years and later years to determine a dog's actual age:
 var myAgeInDogYears = earlyYears + laterYears;
 
 // Prints my age in dog years:

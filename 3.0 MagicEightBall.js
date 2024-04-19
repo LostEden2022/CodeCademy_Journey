@@ -5,6 +5,7 @@ console.log(`${userName} asked: ${userQuestion}`);
 
 let randomNumber = Math.floor(Math.random() * 8);
 
+//Using if/else if/else statements:
 var eightBall = "";
 if (randomNumber === 0) {
   eightBall = "It is certain";

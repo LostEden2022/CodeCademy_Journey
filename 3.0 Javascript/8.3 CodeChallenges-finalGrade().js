@@ -28,4 +28,5 @@ const finalGrade = (midterm, final, homework) => {
   // Should print "B"
   
   // We encourage you to add more function calls of your own to test your code!
+  console.log(finalGrade(70, 70, 70)); 
   

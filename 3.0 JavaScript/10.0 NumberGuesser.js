@@ -7,36 +7,36 @@ let currentRoundNumber = 1;
 const generateTarget = () => {
   const targetNumber = Math.floor(Math.random() * 10);
   return `Target Number: ${targetNumber}`;
-}
-console.log(generateTarget());
+};
+//console.log(generateTarget());
 
 const compareGuesses = (humanGuess, computerGuess, targetNumber) => {
-    if (humanGuess === computerGuess) {
-      return true;
-    } else if ((Math.abs(humanGuess - targetNumber)) < (Math.abs(computerGuess - targetNumber))) {
-      return true;
-    } else if ((Math.abs(humanGuess - targetNumber)) > (Math.abs(computerGuess - targetNumber))){
-      return false;
-    } else {
-      return "Invalid!";
-    }
-  };
-  
-console.log(compareGuesses(2,4,5));
-
-const updateScore = () => { 
-  if (compareGuesses === true) {
-    return humanScore +=1;
-  } else if (compareGuesses === false) {
-    return computerScore +=2;
+  if (humanGuess === computerGuess) {
+    return true;
+  } else if (
+    Math.abs(humanGuess - targetNumber) < Math.abs(computerGuess - targetNumber)
+  ) {
+    return true;
+  } else if (
+    Math.abs(humanGuess - targetNumber) > Math.abs(computerGuess - targetNumber)
+  ) {
+    return false;
   } else {
-    return "Invalid again!";
+    return "Invalid!";
   }
-}
-console.log(updateScore());
+};
+//console.log(compareGuesses(2,3,5));
+
+const updateScore = (winner) => {
+  if (winner === "human") {
+    return (humanScore += 1);
+  } else if (winner === "computer") {
+    return (computerScore += 1);
+  }
+};
+//console.log(updateScore());
 
 const advanceRound = () => {
-let currentRoundNumber = 1;
-currentRoundNumber = currentRoundNumber + 1;
-  }
-console.log(advanceRound());
+  currentRoundNumber += 1;
+};
+//console.log(advanceRound());

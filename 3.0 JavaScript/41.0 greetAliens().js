@@ -12,4 +12,4 @@ console.log('Oh powerful ' + arr[i] + ', we humans offer our unconditional surre
 }
 
 // When you're ready to test your code, uncomment the below and run:
-//greetAliens(aliens);
+greetAliens(aliens);

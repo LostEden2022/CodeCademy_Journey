@@ -1,22 +1,19 @@
-const justCoolStuff = (coolStuff, myStuff) => coolStuff.filter(justCoolStuff => myStuff.includes(justCoolStuff))
+const findMyKeys = randomStuff => randomStuff.findIndex(item => item === 'keys')
 
 /*
-// As a function declaration AND using named function w/ a loop:
-function justCoolStuff(coolStuff, myStuff) {
-      function isInmyStuff(item){
-            for(let i = 0; i<myStuff.length; i++){
-                  if (myStuff[i] === item){
-                        return true
-                  }
+// Alternate solution:
+// As a function declaration using a loop:
+function findMyKeys(randomStuff) {
+      let index = -1;
+      for (let i = 0; i < randomStuff.length; i++) {
+            if (randomStuff[i] === 'keys') {
+                  index = i
+                  break
             }
-            return false 
       }
-      return coolStuff.filter(isInmyStuff)
+      return index
 }
 */
+const randomStuff = ['credit card', 'screwdriver', 'receipt', 'gum', 'keys', 'used gum', 'plastic spoon'];
 
-const coolStuff = ['gameboys', 'skateboards', 'backwards hats', 'fruit-by-the-foot', 'pogs', 'my room', 'temporary tattoos'];
-
-const myStuff = [ 'rules', 'fruit-by-the-foot', 'wedgies', 'sweaters', 'skateboards', 'family-night', 'my room', 'braces', 'the information superhighway']; 
-
-console.log(justCoolStuff(myStuff, coolStuff))
+console.log(findMyKeys(randomStuff))
